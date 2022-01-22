@@ -13,3 +13,22 @@
 
 # Input : n = 13
 # Output : False
+
+import math
+
+def power(n):
+    result=""
+    if (n ==0 or n==2):
+        result= False
+    elif (math.sqrt(n) == type(int)):
+        if (math.sqrt(n*2) == type(float)):
+            result= True
+    elif (math.sqrt(n) == type(float)):
+        if (math.sqrt(n*2) == type(int)):
+            result= True
+    else:   
+        result= False
+        
+    return result
+    
+print(power(16))
